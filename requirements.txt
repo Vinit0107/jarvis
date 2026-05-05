@@ -1,4 +1,4 @@
 pyttsx3>=2.90
-SpeechRecognition>=3.10.0
+SpeechRecognition>=3.16.1
 PyAudio>=0.2.14
 pocketsphinx>=5.0.3
