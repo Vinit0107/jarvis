@@ -92,6 +92,25 @@ You can also press `Ctrl+Shift+P`, choose `Tasks: Run Task`, and run:
 - `JARVIS: Run text mode`
 - `JARVIS: Run voice mode`
 
+## Testing
+
+Run the same checks used by GitHub Actions:
+
+```powershell
+python -m py_compile jarvis.py
+python -m unittest discover -s tests -v
+```
+
+## Repository health
+
+This repo includes:
+
+- GitHub Actions CI for compile and unit test checks
+- Dependabot for Python and GitHub Actions updates
+- Issue templates and a pull request template
+- Privacy, security, support, and contribution docs
+- A `.gitignore` that keeps notes, app cache data, bytecode, and local settings private
+
 ## Example commands
 
 - `help`

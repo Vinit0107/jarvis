@@ -1,0 +1,31 @@
+name: Feature request
+description: Suggest an improvement for the assistant.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: What should JARVIS do?
+      description: Describe the desired behavior in plain language.
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example commands
+      description: Include voice or text examples if you have them.
+      placeholder: |
+        Jarvis open ...
+        Jarvis search ...
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - App launching
+        - Voice recognition
+        - Web/search
+        - Startup automation
+        - Documentation
+        - Other
