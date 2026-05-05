@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.pyo
+
+.venv/
+venv/
+env/
+
+notes/
+start_apps_cache.json
+
+.vscode/settings.json
+
+*.log
+*.tmp

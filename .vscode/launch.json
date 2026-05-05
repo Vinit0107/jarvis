@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "JARVIS: Run text mode",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/jarvis.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "JARVIS: Run voice mode",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/jarvis.py",
+      "args": ["--voice"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

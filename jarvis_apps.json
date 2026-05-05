@@ -1,0 +1,39 @@
+{
+  "chrome": [
+    "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+  ],
+  "edge": [
+    "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe",
+    "msedge.exe"
+  ],
+  "file explorer": [
+    "explorer.exe"
+  ],
+  "notepad": [
+    "notepad.exe"
+  ],
+  "calculator": [
+    "calc.exe"
+  ],
+  "paint": [
+    "mspaint.exe"
+  ],
+  "settings": [
+    "ms-settings:"
+  ],
+  "vscode": [
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "code"
+  ],
+  "task manager": [
+    "taskmgr.exe"
+  ],
+  "terminal": [
+    "wt.exe"
+  ],
+  "spotify": [
+    "C:\\Users\\%USERNAME%\\AppData\\Roaming\\Spotify\\Spotify.exe"
+  ]
+}

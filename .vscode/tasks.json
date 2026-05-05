@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "JARVIS: Install voice requirements",
+      "type": "shell",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": ["-m", "pip", "install", "-r", "requirements.txt"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "JARVIS: Run text mode",
+      "type": "shell",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": ["jarvis.py"],
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "JARVIS: Run voice mode",
+      "type": "shell",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": ["jarvis.py", "--voice"],
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}
