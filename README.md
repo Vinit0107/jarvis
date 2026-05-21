@@ -20,6 +20,20 @@ This is a lightweight local assistant inspired by JARVIS.
 python jarvis.py
 ```
 
+## Run the GUI
+
+```powershell
+python jarvis_gui.py
+```
+
+The GUI includes:
+
+- a conversation log,
+- typed command input,
+- quick action buttons,
+- app shortcut visibility,
+- a `Listen Once` button with `offline`, `online`, and `auto` recognition modes.
+
 ## Run it in voice mode
 
 ```powershell
@@ -85,12 +99,14 @@ Use the Run and Debug panel and choose one of these configurations:
 
 - `JARVIS: Run text mode`
 - `JARVIS: Run voice mode`
+- `JARVIS: Run GUI`
 
 You can also press `Ctrl+Shift+P`, choose `Tasks: Run Task`, and run:
 
 - `JARVIS: Install voice requirements`
 - `JARVIS: Run text mode`
 - `JARVIS: Run voice mode`
+- `JARVIS: Run GUI`
 
 ## Testing
 
@@ -98,6 +114,7 @@ Run the same checks used by GitHub Actions:
 
 ```powershell
 python -m py_compile jarvis.py
+python -m py_compile jarvis_gui.py
 python -m unittest discover -s tests -v
 ```
 

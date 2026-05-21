@@ -24,6 +24,14 @@
       "args": ["jarvis.py", "--voice"],
       "group": "test",
       "problemMatcher": []
+    },
+    {
+      "label": "JARVIS: Run GUI",
+      "type": "shell",
+      "command": "${config:python.defaultInterpreterPath}",
+      "args": ["jarvis_gui.py"],
+      "group": "test",
+      "problemMatcher": []
     }
   ]
 }

@@ -17,6 +17,14 @@
       "args": ["--voice"],
       "console": "integratedTerminal",
       "justMyCode": true
+    },
+    {
+      "name": "JARVIS: Run GUI",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/jarvis_gui.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
     }
   ]
 }

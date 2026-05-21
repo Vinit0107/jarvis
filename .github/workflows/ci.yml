@@ -21,7 +21,9 @@ jobs:
           python-version: "3.13"
 
       - name: Compile source
-        run: python -m py_compile jarvis.py
+        run: |
+          python -m py_compile jarvis.py
+          python -m py_compile jarvis_gui.py
 
       - name: Run unit tests
         run: python -m unittest discover -s tests -v
