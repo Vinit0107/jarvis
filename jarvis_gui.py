@@ -5,6 +5,25 @@ from tkinter import messagebox, scrolledtext, ttk
 from jarvis import Jarvis, VoiceListener
 
 
+class SilentSpeaker:
+    def say(self, message: str) -> None:
+        return None
+
+
+def voice_command_from_guesses(jarvis: Jarvis, guesses: list[str]) -> str:
+    for guess in guesses:
+        command = jarvis.clean_voice_command(guess)
+        if command:
+            return jarvis.to_canonical_command(command)
+
+    for guess in guesses:
+        command = guess.strip()
+        if command:
+            return jarvis.to_canonical_command(command)
+
+    return ""
+
+
 class JarvisGUI:
     def __init__(self, root: tk.Tk) -> None:
         self.root = root
@@ -14,6 +33,7 @@ class JarvisGUI:
         self.root.configure(bg="#08111f")
 
         self.jarvis = Jarvis(voice=False)
+        self.jarvis.speaker = SilentSpeaker()
         self.is_listening = False
         self.recognition_mode = tk.StringVar(value="offline")
         self.status_text = tk.StringVar(value="Ready")
@@ -221,11 +241,11 @@ class JarvisGUI:
             return
 
         guesses = listener.listen()
-        command = self.jarvis.best_voice_command(guesses) if guesses else ""
+        command = voice_command_from_guesses(self.jarvis, guesses) if guesses else ""
         if not command:
             self.root.after(
                 0,
-                lambda: self.finish_listening("", "I did not catch a JARVIS command."),
+                lambda: self.finish_listening("", "I did not catch a command."),
             )
             return
 

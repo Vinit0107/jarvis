@@ -34,6 +34,8 @@ The GUI includes:
 - app shortcut visibility,
 - a `Listen Once` button with `offline`, `online`, and `auto` recognition modes.
 
+In the GUI, `Listen Once` accepts both wake-word commands and direct commands. You can say `Jarvis open Chrome` or just `open Chrome`.
+
 ## Run it in voice mode
 
 ```powershell
